@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#d9d9d9"
+    tools:context=".fragment.BuyTokenFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:layout_marginStart="30dp"
+        android:padding="8dp"
+        android:fadeScrollbars="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv1"
+        android:text="Cost Required"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:orientation="vertical"
+        android:id="@+id/linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Month:"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_margin="8dp"/>
+        <Spinner
+            android:layout_width="175dp"
+            android:layout_height="30dp"
+            android:background="@drawable/boader"
+            android:id="@+id/spinner1"
+            android:gravity="start"
+            android:layout_marginStart="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:background="@drawable/bordercolor"
+            android:id="@+id/calculate1"
+            android:padding="8dp"
+            android:layout_marginStart="250dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Amount:"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_margin="8dp"/>
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:inputType="numberDecimal"
+            android:background="@drawable/boader"
+            android:id="@+id/amount"
+            android:gravity="center"
+            android:hint="ksh"
+            android:layout_marginStart="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Units in Kwh"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:padding="4dp"
+            android:id="@+id/kwh"
+            android:layout_marginStart="150dp"
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/linear"
+        android:background="@color/black"
+        android:id="@+id/view"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:layout_marginStart="30dp"
+        android:padding="8dp"
+        android:fadeScrollbars="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/view"
+        android:id="@+id/tv2"
+        android:text="Units Required"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/tv2"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Month:"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_margin="8dp"/>
+        <Spinner
+            android:layout_width="175dp"
+            android:layout_height="30dp"
+            android:background="@drawable/boader"
+            android:id="@+id/spinner2"
+            android:layout_marginStart="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:background="@drawable/bordercolor"
+            android:id="@+id/calculate2"
+            android:padding="8dp"
+            android:layout_marginStart="250dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Units Needed:"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_margin="8dp"/>
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:inputType="numberDecimal"
+            android:background="@drawable/boader"
+            android:id="@+id/units"
+            android:hint="kwh"
+            android:gravity="center"
+            android:layout_marginStart="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Cost in Ksh"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:id="@+id/ksh"
+            android:padding="4dp"
+            android:layout_marginStart="150dp"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

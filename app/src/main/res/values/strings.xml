@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SmartMeter</string>
+    <string name="enter_password">Enter password</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="sitima_prices">Sitima Prices</string>
+    <string name="about_us">About Us</string>
+    <string name="my_usage_by_device">My Usage By Device</string>
+    <string name="my_total_usage">My Total Usage</string>
+    <string name="my_usage_by_data_by_range">My Usage By Data By Range</string>
+    <string name="request_service">Request Service</string>
+    <string name="request_product">Request Product</string>
+    <string name="report_an_issue">Report an Issue</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="home">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logout">Logout</string>
+</resources>

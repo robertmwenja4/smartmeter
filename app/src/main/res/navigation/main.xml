@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/about"
+        android:name="com.example.smartmeter.fragment.AboutUsfragment"
+        android:label="About Us" />
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.smartmeter.fragment.Homefragment"
+        android:label="Home" />
+    <fragment
+        android:id="@+id/prices"
+        android:name="com.example.smartmeter.fragment.BuyTokenFragment"
+        android:label="Buy Token" />
+    <fragment
+        android:id="@+id/contact"
+        android:name="com.example.smartmeter.fragment.ContactUs"
+        android:label="Contact Us" />
+    <fragment
+        android:id="@+id/range"
+        android:name="com.example.smartmeter.fragment.DataUsage"
+        android:label="Data Usage" />
+    <fragment
+        android:id="@+id/device"
+        android:name="com.example.smartmeter.fragment.DeviceUsageFragment"
+        android:label="Device Usage" />
+    <fragment
+        android:id="@+id/previous"
+        android:name="com.example.smartmeter.fragment.PreviousMonthsFragment"
+        android:label="Previous Months" />
+    <fragment
+        android:id="@+id/issues"
+        android:name="com.example.smartmeter.fragment.Report"
+        android:label="Report Issues" />
+    <fragment
+        android:id="@+id/repoproduct"
+        android:name="com.example.smartmeter.fragment.RequestProduct"
+        android:label="Request Product" />
+    <fragment
+        android:id="@+id/service"
+        android:name="com.example.smartmeter.fragment.RequestService"
+        android:label="Request Service" />
+    <fragment
+        android:id="@+id/totalusage"
+        android:name="com.example.smartmeter.fragment.TotalUsage"
+        android:label="Total Usage" />
+
+</navigation>

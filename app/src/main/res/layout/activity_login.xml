@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="LOGIN"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/tv"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv"
+        android:background="@drawable/ic_account"
+        android:id="@+id/img"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/img">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/boader"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_mail"
+            android:drawableStart="@drawable/ic_mail"
+            android:layout_marginStart="30dp"
+            android:drawablePadding="5dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Enter Email"
+            android:textSize="14sp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:inputType="text"
+            android:id="@+id/username"/>
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/progress"
+            android:visibility="gone"
+            android:elevation="7dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/boader"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:hint="@string/enter_password"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/ic_pass"
+            android:drawablePadding="5dp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:id="@+id/password"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
+            android:id="@+id/login"
+            android:background="@drawable/rounded"
+            android:layout_marginStart="50dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Not Registered?Click here to Register"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginStart="70dp"
+            android:id="@+id/alreadylogin"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
